@@ -1,6 +1,13 @@
+// Import de la Typo
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans&display=swap');
 // Color 
 
 $brand-grey-nav: #333333BF;
 $brand-grey-dark: #333333;
 $brand-grey-light: #6D727B;
 $brand-red: #E3000B;
+
+// Typographie
+
+$font-face-text: "Open Sans", sans-serif;
+$font-face-title: "Kanit", sans-serif;
