@@ -1,0 +1,20 @@
+.loop-intro {
+    position: relative;
+        video {
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            position: static;
+        }
+
+        .container {
+            color: white;
+            .title-wrapper {
+                position: absolute;
+                top: 40%;
+            }
+            
+
+        }
+    
+}

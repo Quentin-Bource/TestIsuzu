@@ -7,10 +7,12 @@ p {
 
 .first-navbar {
   background-color: rgba(51, 51, 51, 0.7490196078);
-  position: static;
+  position: fixed;
+  z-index: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 62px;
   padding: 0px 133px 0px 140px;
 }
@@ -30,6 +32,7 @@ p {
 
 .second-navbar nav {
   background-color: rgba(51, 51, 51, 0.7490196078);
+  z-index: 500;
   position: fixed;
   top: 40%;
   right: 0;
@@ -83,4 +86,22 @@ p {
   margin-left: 7px;
   width: 12px;
   height: 12px;
+}
+
+.loop-intro {
+  position: relative;
+}
+.loop-intro video {
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: static;
+}
+.loop-intro .container {
+  color: white;
+}
+.loop-intro .container .title-wrapper {
+  position: absolute;
+  top: 40%;
 }/*# sourceMappingURL=main.css.map */
