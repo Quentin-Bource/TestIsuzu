@@ -1,0 +1,84 @@
+.content-img-slider {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    .container-fluid {      
+        padding: 0;
+        .row {
+            height: 783px;
+            .title-wrapper {
+                padding: 0;
+                position: relative;
+                background-image: url("../img/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp");
+                background-size: cover;
+                background-position: center;
+                h2 {
+                    font-size: 34px;
+                    font-family: $font-face-title;
+                    font-weight: bold;
+                    letter-spacing: 6.8px;
+                    color: white;
+                    margin-top: 83px;
+                    margin-left: 290px;
+                    padding: 0px 12px;
+                    
+                }
+                
+                &::after {
+                    content: "";
+                    width: 150px;
+                    height: 101%;
+                    position: absolute;
+                    right: -1px;
+                    top: -1px;
+                    background-image: url("../img/pictures/bloc-sep-1.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: top;
+                } 
+            }
+
+
+            .slider {
+                display: flex;
+                justify-content: center;              
+                align-items: center;
+                
+                
+                .previous {
+                    margin-right: 35px;
+                }
+
+                .content {
+
+                    h2 {
+                        color: $brand-grey-dark;
+                        font-size: 34px;
+                        letter-spacing: 3.4px;
+                        margin-bottom: 33px;
+                        font-weight: 600;
+                    }
+    
+                    p {
+                        letter-spacing: 0.54px;
+    
+                    }
+    
+                    footer {
+                        margin-top: 35px;
+                    }
+
+                    
+
+                }
+
+                .next {
+                    margin-left: 20px;
+                }
+
+
+
+
+            }
+        }
+    }
+}

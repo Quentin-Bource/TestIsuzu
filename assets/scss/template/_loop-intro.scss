@@ -9,12 +9,38 @@
 
         .container {
             color: white;
+            padding: 0;
             .title-wrapper {
                 position: absolute;
-                top: 40%;
+                top: 45%;                             
+                text-transform: uppercase;
+                                 
+
+
+                h1 {
+                    font-family: $font-face-title;
+                    font-weight: bold; 
+                    font-size: 55px;
+                    letter-spacing: 11px;
+                    color: white;
+                    
+                }
+
+                h2 {
+                    font-family: $font-face-title;
+                    font-weight: bold; 
+                    font-size: 48px;
+                    letter-spacing: 9.6px;
+                    color: white;
+
+                }
             }
             
-
+            .image-wrapper {
+                position: absolute;
+                bottom: 51px;
+                left: 50%;
+            }
         }
     
 }

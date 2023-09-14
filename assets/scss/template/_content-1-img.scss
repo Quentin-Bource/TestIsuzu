@@ -1,0 +1,42 @@
+.content-1-img {
+    .container-fluid {
+        padding: 0;
+        .row {
+            height: 783px;
+            
+
+            .content {
+                display: flex;
+                justify-content: center;              
+                flex-direction: column;
+                padding: 0px 16px 0px 290px;
+
+            }
+            .image-wrapper {
+                position: relative;
+                padding: 0;
+                height: 783px;
+                background-image: url("../img/pictures/04-home-bild_text-N-Serie 3,5t Koffer City Image.webp");
+                background-size: cover;
+                background-position: center;
+
+                
+
+                &::before {
+                    content: "";
+                    width: 150px;
+                    height: 101%;
+                    position: absolute;
+                    left: -1px;
+                    top: -1px;
+                    background-image: url("../img/pictures/bloc-sep-1.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: top;
+                    transform: rotate(180deg);
+                    
+                } 
+            }
+        }
+    }
+}

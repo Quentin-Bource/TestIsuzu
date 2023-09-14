@@ -1,0 +1,48 @@
+.content-1-1 {
+    margin-top: 200px;
+    
+    .container {
+        padding: 0;
+
+        .row {
+
+            header {
+                
+                p {
+                    color: $brand-grey-light;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    margin-bottom: 11px;
+                    font-family: $font-face-title;
+                    
+                }
+
+                h2 {
+                    font-size: 27px;
+                    letter-spacing: 2.7px;
+                    color: $brand-grey-dark;
+                    font-family: $font-face-title;
+                    font-weight: 600;
+                }
+            }
+
+            .text-wrapper {
+                padding: 0;
+                
+                .content {
+                    p {
+                       
+                        letter-spacing: 1.26px;
+                        margin-bottom: 35px ;
+                    }
+                }
+
+                footer {
+                    button {
+                        margin-right: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
