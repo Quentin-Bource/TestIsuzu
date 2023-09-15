@@ -3,6 +3,7 @@ p {
   font-size: 18px;
   color: #333333;
   font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.54px;
 }
 
 h1 {
@@ -58,6 +59,67 @@ h4 {
   color: white;
 }
 
+.content-contact {
+  margin-bottom: 60px;
+}
+.content-contact .container {
+  padding: 0;
+}
+.content-contact .container h2 {
+  font-size: 34px;
+  letter-spacing: 3.4px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.content-contact .container .content h3 {
+  font-size: 22px;
+  letter-spacing: 2.2px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.content-contact .container .content h4 {
+  font-size: 22px;
+  letter-spacing: 2.2px;
+  margin-bottom: 10px;
+}
+.content-contact .container .content .map .map-wrapper {
+  width: 414px;
+  height: 361px;
+  background-image: url("../img/pictures/maps.png");
+  background-size: contain;
+  position: relative;
+}
+.content-contact .container .content .map .map-wrapper .alert {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px #E3000B solid;
+  background-color: rgba(255, 255, 255, 0.6117647059);
+}
+.content-contact .container .content .map .map-wrapper .alert span {
+  text-decoration: underline;
+}
+.content-contact .container .content .map .map-wrapper .pointer {
+  position: absolute;
+  top: 30px;
+  left: 30%;
+}
+.content-contact .container .content .map footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  position: relative;
+}
+.content-contact .container .content .map footer .btn-maps {
+  display: none;
+}
+.content-contact .container .content .map footer .alert {
+  position: absolute;
+  width: 321px;
+  padding: 13px 0px;
+  display: block;
+}
+
 .content-1-1 {
   margin-top: 200px;
 }
@@ -89,6 +151,9 @@ h4 {
   margin-right: 35px;
 }
 
+.content-1-img {
+  margin-bottom: 100px;
+}
 .content-1-img .container-fluid {
   padding: 0;
 }
@@ -99,7 +164,29 @@ h4 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 16px 0px 290px;
+  padding: 0px 16px 0px 302px;
+}
+.content-1-img .container-fluid .row .content header p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #6D727B;
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 11px;
+}
+.content-1-img .container-fluid .row .content header h2 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 3.4px;
+  margin-bottom: 24px;
+}
+.content-1-img .container-fluid .row .content .text {
+  padding-right: 95px;
+}
+.content-1-img .container-fluid .row .content footer button {
+  width: 263px;
+}
+.content-1-img .container-fluid .row .content footer .btn-theme {
+  margin-bottom: 15px;
 }
 .content-1-img .container-fluid .row .image-wrapper {
   position: relative;
@@ -121,6 +208,10 @@ h4 {
   background-repeat: no-repeat;
   background-position: top;
   transform: rotate(180deg);
+}
+
+.hidden {
+  display: none;
 }
 
 .content-img-slider {
@@ -185,6 +276,71 @@ h4 {
 }
 .content-img-slider .container-fluid .row .slider .next {
   margin-left: 20px;
+}
+
+.evaluation .container {
+  padding: 0;
+}
+.evaluation .container h2 {
+  font-size: 34px;
+  letter-spacing: 3.4px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.evaluation .container .row .star {
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.evaluation .container .row .star span {
+  font-size: 100px;
+  font-family: "Kanit", sans-serif;
+  color: #E3000B;
+  margin-right: 36px;
+}
+.evaluation .container .row .star .note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.evaluation .container .row .star .note .star-note {
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+.evaluation .container .row .star .note p {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-family: "Kanit", sans-serif;
+}
+.evaluation .container .row .comment {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.evaluation .container .row .comment .content {
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3803921569);
+  margin: 0px 41px;
+}
+.evaluation .container .row .comment .content h3 {
+  color: #6D727B;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding: 25px 0px;
+}
+.evaluation .container .row .comment .content p {
+  padding: 0px 65px;
+}
+.evaluation .container .row .comment .content footer {
+  margin-bottom: 30px;
+}
+.evaluation .container .row .comment .content footer img {
+  height: 26px;
 }
 
 .first-navbar {
@@ -319,6 +475,7 @@ h4 {
   font-size: 34px;
   letter-spacing: 6.8px;
   font-weight: 700;
+  margin-left: -12px;
 }
 .product .container .content {
   display: flex;

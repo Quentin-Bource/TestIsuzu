@@ -1,4 +1,5 @@
 .content-1-img {
+    margin-bottom: 100px;
     .container-fluid {
         padding: 0;
         .row {
@@ -9,7 +10,39 @@
                 display: flex;
                 justify-content: center;              
                 flex-direction: column;
-                padding: 0px 16px 0px 290px;
+                padding: 0px 16px 0px 302px;
+
+                header {
+                    p {
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                        color: $brand-grey-light;
+                        font-family: $font-face-title;
+                        margin-bottom: 11px;
+                    }
+                    h2 {
+                        font-size: 34px;
+                        font-weight: 600;
+                        letter-spacing: 3.4px;
+                        margin-bottom: 24px;
+                    }
+
+                }
+
+                .text {
+                    padding-right: 95px;
+                }
+
+                footer {
+                    button {
+                        width: 263px;
+                        
+                    }
+
+                    .btn-theme {
+                        margin-bottom: 15px;
+                    }
+                }
 
             }
             .image-wrapper {
@@ -39,4 +72,8 @@
             }
         }
     }
+}
+
+.hidden {
+    display: none;
 }

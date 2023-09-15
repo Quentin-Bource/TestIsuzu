@@ -10,3 +10,20 @@ function togglePlayPause() {
       vid.pause();
     }
   }
+
+
+
+  let mapWrapper = document.querySelector('.map');
+  let alertDiv = document.querySelector('.alert');
+  
+  function alertClick() {
+      if (alertDiv.style.display === 'none' || alertDiv.style.display === '') {
+          alertDiv.style.display = 'block';
+          document.getElementById('googleMapsBtn').style.display = 'block'; 
+          document.getElementById('route').style.display = 'none'; 
+      } else {
+          alertDiv.style.display = 'none';
+          document.getElementById('googleMapsBtn').style.display = 'none'; 
+          document.getElementById('route').style.display = 'block'; 
+      }
+  }
