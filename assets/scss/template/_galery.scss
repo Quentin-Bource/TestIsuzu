@@ -1,9 +1,55 @@
 .galery {
+
+    h2 {
+        font-size: 34px;
+        letter-spacing: 3.4px;
+        margin-bottom: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
     .container-fluid {
         
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        .previous {
+            opacity: 50%;
+        }
+
+
+
+
+
+        .photo {
+            padding: 10px 25px;
+            height: 270px;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+
+        
+
+        .point {
+            width: 15px;
+            height: 15px;
+            background-color: $brand-red;
+            opacity: 30%;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-top: 30px;
+            &:first-child {
+                opacity: 1;
+            }
+        }
     }
 
 

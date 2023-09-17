@@ -280,6 +280,9 @@ h4 {
   margin-left: 20px;
 }
 
+.evaluation {
+  margin-bottom: 100px;
+}
 .evaluation .container {
   padding: 0;
 }
@@ -345,10 +348,45 @@ h4 {
   height: 26px;
 }
 
+.galery h2 {
+  font-size: 34px;
+  letter-spacing: 3.4px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .galery .container-fluid {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.galery .container-fluid .previous {
+  opacity: 50%;
+}
+.galery .container-fluid .photo {
+  padding: 10px 25px;
+  height: 270px;
+}
+.galery .container-fluid .photo img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.galery .nav {
+  display: flex;
+  justify-content: center;
+}
+.galery .nav .point {
+  width: 15px;
+  height: 15px;
+  background-color: #E3000B;
+  opacity: 30%;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.galery .nav .point:first-child {
+  opacity: 1;
 }
 
 .first-navbar {
