@@ -1,14 +1,70 @@
 .footer {
     margin-top: 130px;
     .link {
-        display: flex;
-        
+        display: flex;     
         justify-content: center ;
         align-items: center;
+
+        p {
+            margin: 0;
+            margin-right: 10px;
+            font-size: 14px;
+
+            span {
+                font-weight: bold;
+            }
+        }
         
         
 
     }
+
+    .nav {
+        margin-top: 90px;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        ul {
+            margin-top: 35px;
+            display: flex;
+            list-style: none;
+
+            li {
+                font-family: $font-face-title;
+                font-weight: 600;
+                letter-spacing: 0.9px;
+                font-size: 18px;
+                margin-right: 35px;
+
+            }
+        }
+    }
+    .colophon {
+
+        .container {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid $brand-grey-light;
+            margin-bottom: 50px;
+            p {
+                margin-bottom: 0;
+                margin-top: 35px;
+                margin-right: 20px;
+                font-size: 14px;
+            }
+    
+            .link2 {
+                margin-top: 32px;
+                
+                display: flex;
+            }
+        }
+
+    }
+
 }
 
 .reseau {
@@ -16,6 +72,7 @@
     height: 32px;
     background-color: $brand-grey-light ;
     border-radius: 50%;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,5 +82,9 @@
     justify-content: center;
     align-items: center;
         
+    }
+
+    &:hover {
+        background-color: $brand-red;
     }
 }

@@ -356,12 +356,57 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+.footer .link p {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.footer .link p span {
+  font-weight: bold;
+}
+.footer .nav {
+  margin-top: 90px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .nav ul {
+  margin-top: 35px;
+  display: flex;
+  list-style: none;
+}
+.footer .nav ul li {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  font-size: 18px;
+  margin-right: 35px;
+}
+.footer .colophon .container {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #6D727B;
+  margin-bottom: 50px;
+}
+.footer .colophon .container p {
+  margin-bottom: 0;
+  margin-top: 35px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.footer .colophon .container .link2 {
+  margin-top: 32px;
+  display: flex;
+}
 
 .reseau {
   width: 32px;
   height: 32px;
   background-color: #6D727B;
   border-radius: 50%;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,6 +415,9 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.reseau:hover {
+  background-color: #E3000B;
 }
 
 .galery h2 {
