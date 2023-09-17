@@ -1,6 +1,6 @@
 .content-1-img {
     margin-bottom: 100px;
-    .container-fluid {
+    .container {
         overflow: hidden;
         padding: 0;
         .row {
@@ -11,7 +11,7 @@
                 display: flex;
                 justify-content: center;              
                 flex-direction: column;
-                padding: 0px 16px 0px 302px;
+                
 
                 header {
                     p {
@@ -35,6 +35,8 @@
                 }
 
                 footer {
+                    display: flex;
+                    flex-direction: column;
                     button {
                         width: 263px;
                         
@@ -47,9 +49,11 @@
 
             }
             .image-wrapper {
-                position: relative;
+                position: absolute;
+                right: 0;
                 padding: 0;
                 height: 783px;
+                
                 background-image: url("../img/pictures/04-home-bild_text-N-Serie 3,5t Koffer City Image.webp");
                 background-size: cover;
                 background-position: center;

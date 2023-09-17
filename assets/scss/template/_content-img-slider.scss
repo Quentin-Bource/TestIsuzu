@@ -1,29 +1,20 @@
 .content-img-slider {
     margin-top: 200px;
     margin-bottom: 100px;
-    .container-fluid {      
+    .container {      
         padding: 0;
-        overflow: hidden;
         .row {
             height: 783px;
-            .title-wrapper {
+
+            .image-wrapper {
+                position: absolute;
+                left: 0;
                 padding: 0;
-                position: relative;
+                height: 783px;
                 background-image: url("../img/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp");
                 background-size: cover;
                 background-position: center;
-                h2 {
-                    font-size: 34px;
-                    font-family: $font-face-title;
-                    font-weight: bold;
-                    letter-spacing: 6.8px;
-                    color: white;
-                    margin-top: 83px;
-                    margin-left: 290px;
-                    padding: 0px 12px;
-                    
-                }
-                
+
                 &::after {
                     content: "";
                     width: 150px;
@@ -37,19 +28,41 @@
                     background-position: top;
                 } 
             }
+            .title-wrapper {
+                padding: 0;
+                position: relative;
+                left: 0;
+                
+                h2 {
+                    font-size: 34px;
+                    font-family: $font-face-title;
+                    font-weight: bold;
+                    letter-spacing: 6.8px;
+                    color: white;
+                    margin-top: 83px;
+                    padding: 0px 12px;
+                    
+                }
+                
+
+            }
 
 
             .slider {
                 display: flex;
                 justify-content: center;              
                 align-items: center;
-                
+                position: relative;
+                padding: 0;
+
                 
                 .previous {
-                    margin-right: 35px;
+                    position: absolute;
+                    left: 0;
                 }
 
                 .content {
+                    padding-left: 60px;
 
                     h2 {
                         color: $brand-grey-dark;
@@ -73,7 +86,9 @@
                 }
 
                 .next {
-                    margin-left: 20px;
+                    position: absolute;
+                    right: -40px;
+                    
                 }
 
 

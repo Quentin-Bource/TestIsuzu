@@ -154,50 +154,54 @@ h4 {
 .content-1-img {
   margin-bottom: 100px;
 }
-.content-1-img .container-fluid {
+.content-1-img .container {
   overflow: hidden;
   padding: 0;
 }
-.content-1-img .container-fluid .row {
+.content-1-img .container .row {
   height: 783px;
 }
-.content-1-img .container-fluid .row .content {
+.content-1-img .container .row .content {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 16px 0px 302px;
 }
-.content-1-img .container-fluid .row .content header p {
+.content-1-img .container .row .content header p {
   font-size: 20px;
   letter-spacing: 2px;
   color: #6D727B;
   font-family: "Kanit", sans-serif;
   margin-bottom: 11px;
 }
-.content-1-img .container-fluid .row .content header h2 {
+.content-1-img .container .row .content header h2 {
   font-size: 34px;
   font-weight: 600;
   letter-spacing: 3.4px;
   margin-bottom: 24px;
 }
-.content-1-img .container-fluid .row .content .text {
+.content-1-img .container .row .content .text {
   padding-right: 95px;
 }
-.content-1-img .container-fluid .row .content footer button {
+.content-1-img .container .row .content footer {
+  display: flex;
+  flex-direction: column;
+}
+.content-1-img .container .row .content footer button {
   width: 263px;
 }
-.content-1-img .container-fluid .row .content footer .btn-theme {
+.content-1-img .container .row .content footer .btn-theme {
   margin-bottom: 15px;
 }
-.content-1-img .container-fluid .row .image-wrapper {
-  position: relative;
+.content-1-img .container .row .image-wrapper {
+  position: absolute;
+  right: 0;
   padding: 0;
   height: 783px;
   background-image: url("../img/pictures/04-home-bild_text-N-Serie 3,5t Koffer City Image.webp");
   background-size: cover;
   background-position: center;
 }
-.content-1-img .container-fluid .row .image-wrapper::before {
+.content-1-img .container .row .image-wrapper::before {
   content: "";
   width: 150px;
   height: 101%;
@@ -219,31 +223,22 @@ h4 {
   margin-top: 200px;
   margin-bottom: 100px;
 }
-.content-img-slider .container-fluid {
+.content-img-slider .container {
   padding: 0;
-  overflow: hidden;
 }
-.content-img-slider .container-fluid .row {
+.content-img-slider .container .row {
   height: 783px;
 }
-.content-img-slider .container-fluid .row .title-wrapper {
+.content-img-slider .container .row .image-wrapper {
+  position: absolute;
+  left: 0;
   padding: 0;
-  position: relative;
+  height: 783px;
   background-image: url("../img/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp");
   background-size: cover;
   background-position: center;
 }
-.content-img-slider .container-fluid .row .title-wrapper h2 {
-  font-size: 34px;
-  font-family: "Kanit", sans-serif;
-  font-weight: bold;
-  letter-spacing: 6.8px;
-  color: white;
-  margin-top: 83px;
-  margin-left: 290px;
-  padding: 0px 12px;
-}
-.content-img-slider .container-fluid .row .title-wrapper::after {
+.content-img-slider .container .row .image-wrapper::after {
   content: "";
   width: 150px;
   height: 101%;
@@ -255,29 +250,50 @@ h4 {
   background-repeat: no-repeat;
   background-position: top;
 }
-.content-img-slider .container-fluid .row .slider {
+.content-img-slider .container .row .title-wrapper {
+  padding: 0;
+  position: relative;
+  left: 0;
+}
+.content-img-slider .container .row .title-wrapper h2 {
+  font-size: 34px;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  letter-spacing: 6.8px;
+  color: white;
+  margin-top: 83px;
+  padding: 0px 12px;
+}
+.content-img-slider .container .row .slider {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  padding: 0;
 }
-.content-img-slider .container-fluid .row .slider .previous {
-  margin-right: 35px;
+.content-img-slider .container .row .slider .previous {
+  position: absolute;
+  left: 0;
 }
-.content-img-slider .container-fluid .row .slider .content h2 {
+.content-img-slider .container .row .slider .content {
+  padding-left: 60px;
+}
+.content-img-slider .container .row .slider .content h2 {
   color: #333333;
   font-size: 34px;
   letter-spacing: 3.4px;
   margin-bottom: 33px;
   font-weight: 600;
 }
-.content-img-slider .container-fluid .row .slider .content p {
+.content-img-slider .container .row .slider .content p {
   letter-spacing: 0.54px;
 }
-.content-img-slider .container-fluid .row .slider .content footer {
+.content-img-slider .container .row .slider .content footer {
   margin-top: 35px;
 }
-.content-img-slider .container-fluid .row .slider .next {
-  margin-left: 20px;
+.content-img-slider .container .row .slider .next {
+  position: absolute;
+  right: -40px;
 }
 
 .evaluation {
@@ -593,7 +609,6 @@ h4 {
   font-size: 34px;
   letter-spacing: 6.8px;
   font-weight: 700;
-  margin-left: -12px;
 }
 .product .container .content {
   display: flex;
