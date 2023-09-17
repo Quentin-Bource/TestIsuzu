@@ -155,6 +155,7 @@ h4 {
   margin-bottom: 100px;
 }
 .content-1-img .container-fluid {
+  overflow: hidden;
   padding: 0;
 }
 .content-1-img .container-fluid .row {
@@ -220,6 +221,7 @@ h4 {
 }
 .content-img-slider .container-fluid {
   padding: 0;
+  overflow: hidden;
 }
 .content-img-slider .container-fluid .row {
   height: 783px;
@@ -341,6 +343,12 @@ h4 {
 }
 .evaluation .container .row .comment .content footer img {
   height: 26px;
+}
+
+.galery .container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .first-navbar {
