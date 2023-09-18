@@ -157,9 +157,48 @@
     }
 
     .navMobile {
-        
+        position: fixed;
+        background-color: white;
         height: 100vh;
+        width: 100%;
+        right: -100%;
         z-index: 10000;
+        padding-left: 35px;
+        
+        transition: ease-in 0.3s;
+
+        &.active {
+            right: 0;
+        }
+        .cross {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+        }
+
+        h2 {
+            padding-top: 60px;
+            margin-bottom: 35px;
+            font-size: 18px;
+            letter-spacing: 0.9px;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 30px;
+            padding: 0;
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    letter-spacing: 0.9px;
+                    color: $brand-grey-dark;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                    font-family: $font-face-title;
+                }
+            }
+        }
 
         button {
             display: flex;
