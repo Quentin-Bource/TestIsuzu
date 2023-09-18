@@ -9906,7 +9906,7 @@ h4, .h4 {
 .content-1-1 {
   margin-top: 200px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .content-1-1 {
     margin-top: 60px;
   }
@@ -9925,7 +9925,7 @@ h4, .h4 {
   margin-bottom: 11px;
   font-family: "Kanit", sans-serif;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .content-1-1 .container .row header p {
     font-size: 15px;
     letter-spacing: 0.75px;
@@ -9938,7 +9938,7 @@ h4, .h4 {
   font-family: "Kanit", sans-serif;
   font-weight: 600;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .content-1-1 .container .row header h2, .content-1-1 .container .row header .h2 {
     margin-bottom: 20px;
   }
@@ -9955,12 +9955,12 @@ h4, .h4 {
   letter-spacing: 1.26px;
   margin-bottom: 35px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .content-1-1 .container .row .text-wrapper .content p {
     margin-bottom: 15px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .content-1-1 .container .row .text-wrapper footer .button {
     display: none;
     flex-direction: column;
@@ -9972,7 +9972,7 @@ h4, .h4 {
 .content-1-1 .container .row .text-wrapper footer .button button {
   margin-right: 35px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .content-1-1 .container .row .text-wrapper footer .button button {
     margin-right: 0;
     width: 250px;
@@ -9980,8 +9980,13 @@ h4, .h4 {
   }
 }
 .content-1-1 .container .row .text-wrapper footer .read {
-  display: flex;
+  display: none;
   justify-content: center;
+}
+@media (max-width: 767.98px) {
+  .content-1-1 .container .row .text-wrapper footer .read {
+    display: flex;
+  }
 }
 .content-1-1 .container .row .text-wrapper footer .read .more {
   display: flex;
@@ -10101,11 +10106,22 @@ h4, .h4 {
   margin-top: 200px;
   margin-bottom: 100px;
 }
+@media (max-width: 767.98px) {
+  .content-img-slider {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+}
 .content-img-slider .container {
   padding: 0;
 }
 .content-img-slider .container .row {
   height: 783px;
+}
+@media (max-width: 767.98px) {
+  .content-img-slider .container .row {
+    height: 460px;
+  }
 }
 .content-img-slider .container .row .image-wrapper {
   position: absolute;
@@ -10115,6 +10131,12 @@ h4, .h4 {
   background-image: url("../img/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp");
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 767.98px) {
+  .content-img-slider .container .row .image-wrapper {
+    height: 460px;
+    right: 0;
+  }
 }
 .content-img-slider .container .row .image-wrapper::after {
   content: "";
@@ -10127,6 +10149,13 @@ h4, .h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+}
+@media (max-width: 575.98px) {
+  .content-img-slider .container .row .image-wrapper::after {
+    display: none;
+    transform: rotate(90deg);
+    bottom: 0;
+  }
 }
 .content-img-slider .container .row .title-wrapper {
   padding: 0;
@@ -10142,6 +10171,14 @@ h4, .h4 {
   margin-top: 83px;
   padding: 0px 12px;
 }
+@media (max-width: 767.98px) {
+  .content-img-slider .container .row .title-wrapper h2, .content-img-slider .container .row .title-wrapper .h2 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 0;
+  }
+}
 .content-img-slider .container .row .slider {
   display: flex;
   justify-content: center;
@@ -10153,8 +10190,19 @@ h4, .h4 {
   position: absolute;
   left: 0;
 }
+@media (max-width: 767.98px) {
+  .content-img-slider .container .row .slider .previous {
+    display: none;
+  }
+}
 .content-img-slider .container .row .slider .content {
   padding-left: 60px;
+}
+@media (max-width: 767.98px) {
+  .content-img-slider .container .row .slider .content {
+    margin-top: 400px;
+    padding: 0px 30px;
+  }
 }
 .content-img-slider .container .row .slider .content h2, .content-img-slider .container .row .slider .content .h2 {
   color: #333333;
@@ -10163,15 +10211,40 @@ h4, .h4 {
   margin-bottom: 33px;
   font-weight: 600;
 }
+@media (max-width: 767.98px) {
+  .content-img-slider .container .row .slider .content h2, .content-img-slider .container .row .slider .content .h2 {
+    font-size: 27px;
+    letter-spacing: 2.7px;
+    text-align: center;
+  }
+}
 .content-img-slider .container .row .slider .content p {
   letter-spacing: 0.54px;
+}
+@media (max-width: 767.98px) {
+  .content-img-slider .container .row .slider .content p {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.12px;
+  }
 }
 .content-img-slider .container .row .slider .content footer {
   margin-top: 35px;
 }
+@media (max-width: 767.98px) {
+  .content-img-slider .container .row .slider .content footer {
+    display: flex;
+    justify-content: center;
+  }
+}
 .content-img-slider .container .row .slider .next {
   position: absolute;
   right: -40px;
+}
+@media (max-width: 767.98px) {
+  .content-img-slider .container .row .slider .next {
+    display: none;
+  }
 }
 
 .evaluation {
