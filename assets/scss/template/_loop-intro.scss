@@ -10,6 +10,9 @@
         .container {
             color: white;
             padding: 0;
+            @include media-breakpoint-down(sm) {
+                padding: 0px 23px;
+            }
             .title-wrapper {
                 position: absolute;
                 top: 45%;                             
@@ -23,9 +26,13 @@
                     font-size: 55px;
                     letter-spacing: 11px;
                     color: white;
+                    @include media-breakpoint-down(md) {
+                        font-size: 42px ;
+                        letter-spacing: 5px;
+                    }
                     @include media-breakpoint-down(sm) {
-                        font-size: 34pt ;
-                        letter-spacing: 3.4pt;
+                        font-size: 34px ;
+                        letter-spacing: 3.4px;
                     }
                     
                 }
@@ -36,6 +43,15 @@
                     font-size: 48px;
                     letter-spacing: 9.6px;
                     color: white;
+                    @include media-breakpoint-down(md) {
+                        font-size: 32px ;
+                        letter-spacing: 4px;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 25px ;
+                        letter-spacing: 2.5px;
+                    }
 
                 }
             }
@@ -44,6 +60,11 @@
                 position: absolute;
                 bottom: 51px;
                 left: 50%;
+                
+                @include media-breakpoint-down(sm) {
+                    bottom: 100px;
+                    left: 47%;
+                }
             }
         }
     

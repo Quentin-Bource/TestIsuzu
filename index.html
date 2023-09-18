@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
     <title>IsuzuHome</title>
     <link rel="stylesheet" href="./assets/scss/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/scss/bootstrap/scss/bootstrap.css">
     <link rel="stylesheet" href="./assets/scss/main.css">
     
 </head>
@@ -16,17 +17,26 @@
         <!--First NavBar-->
         <section class="first-navbar">
 
+            <div class="title-wrapper">
+
                 <div class="brand-logo">
                     <img src="assets\img\vectors\Logo-Isuzu-white.svg" alt="Logo">
                 </div>
                 
                 <p class="header-text">Autohaus mustermann, musterstarf</p>
 
+
+            </div>
+
+
+                <div class="menu">
+                    <img src="./assets/img/vectors/navBar.svg" alt="menu">
+                </div>
         </section>
 
         <!--Second NavBar-->
         <section class="second-navbar">
-            <nav>
+            <nav class="navDesktop">
                 <ul>
                     <li><a href="#">Startseite</a></li>
                     <li><a href="#">Über uns</a></li>
@@ -37,6 +47,34 @@
                 </ul>
             </nav>
 
+            <nav class="navMobile">
+                <img src="./assets/img/vectors/close-navbar.svg" alt="close">
+                <h2>AUTOHAUS MUSTERMANN, <br> MUSTERSTARF</h2>
+
+                <ul>
+                    <li><a href="#">Startseite</a></li>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">D-MAX</a></li>
+                    <li><a href="#">N-SERIES</a></li>
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Fotogalerie</a></li>
+                </ul>
+
+                <button class="btn-theme"><img src="./assets/img/vectors/volant.png" alt="volant"> Probefahrt</button>
+
+            </nav>
+
+        </section>
+
+        <!--Base-->
+
+        <section class="base">
+            <div class="volant">
+                <img src="./assets/img/vectors/volant.png" alt="volant"><p>Probefahrt</p>
+            </div>
+            <div class="phone">
+                <img src="./assets/img/vectors/phone.svg" alt="phone"><p>Kontakt</p>
+            </div>
         </section>
 
     </header>
@@ -528,6 +566,5 @@
         
     </footer> -->
 </body>
-
 <script src="./assets/js/index.js"></script>
 </html>

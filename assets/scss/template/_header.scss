@@ -1,20 +1,52 @@
+//NavTop
+
 .first-navbar {
     background-color: $brand-grey-nav;
     position:fixed;
     z-index: 500;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     height: 62px ;
     padding: 0px 133px 0px 140px ;
 
+    @include media-breakpoint-down(md) {
+        padding: 0px 60px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        height: 70px ;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .title-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media-breakpoint-down(sm) {
+            
+            flex-direction: column;
+            justify-content: start;    
+            align-items: start;    
+        }
+    }
+
+    
+
 
     .brand-logo {
         img {
-            height: 24px !important;
+            height: 24px;
             width: auto;
             opacity: 1;
+
+            @include media-breakpoint-down(sm) {
+                height: 19px !important;
+                margin-bottom: 7px;
+            }
         }
     }
     
@@ -25,14 +57,36 @@
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 1px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 13px;
+            letter-spacing: 0;
+        }
+    }
+
+    .menu {
+        display: none;
+        img {
+            width: 30px ;
+            height: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
     }
 }
 
+// NavRight
+
 .second-navbar {
+
     
-    nav {
+    .navDesktop {
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
         background-color: $brand-grey-nav;
-        z-index: 500;
+        z-index: 1000;
         position:fixed;
         top: 40%;
         right: 0;
@@ -99,6 +153,84 @@
                     
                 }
             }
+        }
+    }
+
+    .navMobile {
+        
+        height: 100vh;
+        z-index: 10000;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 208px;
+            font-size: 13px;
+            letter-spacing: 1.3px;
+            img {
+                margin-right: 8px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+//NavBottom
+
+.base {
+    display: none;
+    position: fixed;
+    z-index: 500;
+    bottom: 0;
+    height: 70px ;
+    width: 100%;
+
+    
+    @include media-breakpoint-down(sm) {
+        display:flex;
+    }
+    
+    .volant {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $brand-red;
+        width: 100%;
+        
+        img {
+           width: 30px;
+           height: 30px; 
+           margin-right: 13px;
+        }
+        p {
+            color: white;
+            font-family: $font-face-title;
+            font-size: 17px;
+            letter-spacing: 1.7px;
+            margin: 0;
+        }
+    }
+
+    .phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $brand-grey-dark;
+        width: 100%;
+
+        img {
+           width: 30px;
+           height: 30px;
+           margin-right: 15px; 
+        }
+        p {
+            color: white;
+            font-family: $font-face-title;
+            font-size: 17px;
+            letter-spacing: 1.7px;
+            margin: 0;
         }
     }
 }
