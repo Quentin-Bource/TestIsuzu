@@ -28,6 +28,8 @@ function togglePlayPause() {
       }
   };
 
+  //Menu Navigation Mobile
+
 
   function voirNavMobile() {
     var navMobile = document.querySelector('.navMobile');
@@ -52,3 +54,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var moreBtn = document.querySelector('.more');
+    var lessBtn = document.querySelector('.less');
+    var viewContent = document.querySelector('.view');
+    var btnContent = document.querySelector('.button');
+
+    moreBtn.addEventListener('click', function() {
+        btnContent.style.display = 'flex';
+        viewContent.style.height = viewContent.scrollHeight + 'px'; // Utilise la hauteur réelle
+        moreBtn.style.display = 'none';
+        lessBtn.style.display = 'flex';
+    });
+
+    lessBtn.addEventListener('click', function() {
+        btnContent.style.display = 'none';
+        viewContent.style.height = '0';
+        moreBtn.style.display = 'flex';
+        lessBtn.style.display = 'none';
+    });
+});
+

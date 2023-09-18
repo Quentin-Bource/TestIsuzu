@@ -1,20 +1,27 @@
 .content-1-1 {
     margin-top: 200px;
     
+    @include media-breakpoint-down(sm) {
+        margin-top: 60px;
+    }
     .container {
         padding: 0;
+        padding: 35px;
 
         .row {
 
             header {
-                
+                padding: 0;
                 p {
                     color: $brand-grey-light;
                     font-size: 20px;
                     letter-spacing: 2px;
                     margin-bottom: 11px;
                     font-family: $font-face-title;
-                    
+                    @include media-breakpoint-down(sm) {
+                        font-size: 15px;
+                        letter-spacing: 0.75px;
+                    }
                 }
 
                 h2 {
@@ -23,24 +30,111 @@
                     color: $brand-grey-dark;
                     font-family: $font-face-title;
                     font-weight: 600;
+                    @include media-breakpoint-down(sm) {
+                        margin-bottom: 20px;
+                    }
                 }
             }
 
+            
+
             .text-wrapper {
                 padding: 0;
+                .view {                 
+                    height: 0;
+                    overflow: hidden;
+                    transition: 0.5s ease;
+                }
+                
                 
                 .content {
-                    p {
-                       
+                    p {                      
                         letter-spacing: 1.26px;
                         margin-bottom: 35px ;
+                        @include media-breakpoint-down(sm) {
+                            margin-bottom: 15px;
+                        }
                     }
                 }
 
                 footer {
-                    button {
-                        margin-right: 35px;
+
+                    
+                    
+                    .button {
+                        @include media-breakpoint-down(sm) {
+                            display: none;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 0.5s ease;
+                        }
+
+                        button {
+                            margin-right: 35px;
+                            @include media-breakpoint-down(sm) {
+                                margin-right: 0;
+                                width: 250px;
+                                margin-bottom: 20px;
+                            }
+                        }
                     }
+
+
+                    .read {
+                        display: flex;
+                        justify-content: center;
+
+                        .more {
+                            display: flex;
+                            flex-direction: column;
+                            border: none;
+                            background: transparent;
+                            color: $brand-red;
+                            font-family: $font-face-title;
+                            font-weight: 600;
+                            position: relative;
+
+                            &::after {
+                                content: "";
+                                width: 40px;
+                                height: 25px;
+                                position: absolute;
+                                bottom: -20px;
+                                left: 30%;
+                                background-image: url("../img/vectors/chevron-red.svg");
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                transform: rotate(90deg);
+                            }
+                        }
+
+                        .less {
+                            display: none;
+                            border: none;
+                            background: transparent;
+                            color: $brand-red;
+                            font-family: $font-face-title;
+                            font-weight: 600;
+                            position: relative;
+
+                            &::after {
+                                content: "";
+                                width: 40px;
+                                height: 25px;
+                                position: absolute;
+                                bottom: -20px;
+                                left: 30%;
+                                background-image: url("../img/vectors/chevron-red.svg");
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                transform: rotate(-90deg);
+                            }
+                        }
+                    }
+
                 }
             }
         }
