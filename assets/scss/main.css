@@ -10115,12 +10115,9 @@ h4, .h4 {
 .content-img-slider .container {
   padding: 0;
 }
-.content-img-slider .container .row {
-  height: 783px;
-}
 @media (max-width: 767.98px) {
-  .content-img-slider .container .row {
-    height: 460px;
+  .content-img-slider .container {
+    padding: 0px 12px;
   }
 }
 .content-img-slider .container .row .image-wrapper {
@@ -10150,11 +10147,9 @@ h4, .h4 {
   background-repeat: no-repeat;
   background-position: top;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .content-img-slider .container .row .image-wrapper::after {
     display: none;
-    transform: rotate(90deg);
-    bottom: 0;
   }
 }
 .content-img-slider .container .row .title-wrapper {
@@ -10186,6 +10181,19 @@ h4, .h4 {
   position: relative;
   padding: 0;
 }
+.content-img-slider .container .row .slider::after {
+  content: "";
+  height: 100%;
+  width: 150px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  background-image: url("../img/pictures/bloc-sep-1.svg");
+  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
 .content-img-slider .container .row .slider .previous {
   position: absolute;
   left: 0;
@@ -10201,7 +10209,7 @@ h4, .h4 {
 @media (max-width: 767.98px) {
   .content-img-slider .container .row .slider .content {
     margin-top: 400px;
-    padding: 0px 30px;
+    padding: 0px 23px;
   }
 }
 .content-img-slider .container .row .slider .content h2, .content-img-slider .container .row .slider .content .h2 {
@@ -10216,6 +10224,29 @@ h4, .h4 {
     font-size: 27px;
     letter-spacing: 2.7px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-img-slider .container .row .slider .content h2::after, .content-img-slider .container .row .slider .content .h2::after {
+    content: "";
+    width: 17px;
+    height: 20px;
+    margin-left: 12px;
+    background-image: url("../img/vectors/chevron.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .content-img-slider .container .row .slider .content h2::before, .content-img-slider .container .row .slider .content .h2::before {
+    content: "";
+    width: 17px;
+    height: 20px;
+    margin-right: 12px;
+    background-image: url("../img/vectors/chevron-left.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 .content-img-slider .container .row .slider .content p {

@@ -8,11 +8,12 @@
     }
     .container {      
         padding: 0;
+
+        @include media-breakpoint-down(md) {
+            padding: 0px 12px;
+         }
         .row {
-            height: 783px;
-            @include media-breakpoint-down(md) {
-                height: 460px;
-             }
+            
             .image-wrapper {
                 position: absolute;
                 left: 0;
@@ -38,10 +39,10 @@
                     background-repeat: no-repeat;
                     background-position: top;
 
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(md) {    
+
                         display: none;
-                        transform: rotate(90deg);
-                        bottom: 0;
+
                     }
                 } 
             }
@@ -64,6 +65,8 @@
                         letter-spacing: 5px;
                         text-align: center;
                         padding: 0;
+
+                       
                      }
                     
                 }
@@ -79,6 +82,21 @@
                 position: relative;
                 padding: 0;
 
+                &::after {
+                    content: "";
+                    height: 100%;
+                    width: 150px;
+                    position: absolute;
+                    right: -1px;
+                    top: -1px;
+                    
+                    background-image: url("../img/pictures/bloc-sep-1.svg");
+                    background-color: red;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: top;
+                    
+                }
                 
                 .previous {
                     position: absolute;
@@ -93,7 +111,7 @@
                     padding-left: 60px;
                     @include media-breakpoint-down(md) {
                         margin-top: 400px;
-                        padding: 0px 30px;
+                        padding: 0px 23px;
                     }
 
                     h2 {
@@ -107,7 +125,34 @@
                             font-size: 27px;
                             letter-spacing: 2.7px;
                             text-align: center;
+                            display: flex;
+                            align-items:center ;
+                            justify-content:center ;
+                            
+                            &::after {
+                                content: "";
+                                width: 17px;
+                                height: 20px;    
+                                margin-left: 12px;                                                           
+                                background-image: url("../img/vectors/chevron.svg") ;
+                                background-position: center;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
+
+                            &::before {
+                                content: "";
+                                width: 17px;
+                                height: 20px;  
+                                margin-right: 12px;                                                             
+                                background-image: url("../img/vectors/chevron-left.svg") ;
+                                background-position: center;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
                          }
+
+                         
                     }
     
                     p {
