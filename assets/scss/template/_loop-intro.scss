@@ -23,6 +23,10 @@
                     font-size: 55px;
                     letter-spacing: 11px;
                     color: white;
+                    @include media-breakpoint-down(sm) {
+                        font-size: 34pt ;
+                        letter-spacing: 3.4pt;
+                    }
                     
                 }
 
