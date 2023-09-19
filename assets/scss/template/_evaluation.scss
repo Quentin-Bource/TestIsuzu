@@ -25,12 +25,12 @@
                 justify-content: start;
                 align-items: center;
 
-                @include media-breakpoint-down(md) { 
-                    padding: 0px 35px;   
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: start;
-                }
+                // @include media-breakpoint-down(md) { 
+                //     padding: 0px 35px;   
+                //     flex-direction: column;
+                //     align-items: start;
+                //     justify-content: start;
+                // }
                 
                 span {
                   font-size: 100px;
@@ -84,24 +84,14 @@
                 width: 100%;
                 margin-top: 35px;
 
-                .previous {
-                    img {
-                        @include media-breakpoint-down(md) {    
-                        
-                            width: 15px;
-                        }
-                    }
-                }
+                
                 .content {
                     text-align: center;
                     border-radius: 20px;
                     box-shadow: 0px 0px 30px #00000061;
                     margin:0px 41px ;
 
-                    @include media-breakpoint-down(md) {    
-                        
-                        margin: 0px 30px;
-                    }
+
     
                     h3 {
                         color: $brand-grey-light;
@@ -132,14 +122,7 @@
                     }
                 }
 
-                .next {
-                    img {
-                        @include media-breakpoint-down(md) {    
-                        
-                            width: 15px;
-                        }
-                    }
-                }
+
             }
         }
 
