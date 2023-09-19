@@ -9848,11 +9848,23 @@ h4, .h4 {
 .content-contact .container {
   padding: 0;
 }
+@media (max-width: 767.98px) {
+  .content-contact .container {
+    padding: 0px 23px;
+  }
+}
 .content-contact .container h2, .content-contact .container .h2 {
   font-size: 34px;
   letter-spacing: 3.4px;
   font-weight: 600;
   margin-bottom: 35px;
+}
+@media (max-width: 767.98px) {
+  .content-contact .container h2, .content-contact .container .h2 {
+    font-size: 27px;
+    letter-spacing: 2.7px;
+    word-break: break-all;
+  }
 }
 .content-contact .container .content h3, .content-contact .container .content .h3 {
   font-size: 22px;
@@ -9865,8 +9877,18 @@ h4, .h4 {
   letter-spacing: 2.2px;
   margin-bottom: 10px;
 }
+@media (max-width: 767.98px) {
+  .content-contact .container .content .map {
+    padding: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .content-contact .container .content .map h3, .content-contact .container .content .map .h3 {
+    padding: 0 12px;
+  }
+}
 .content-contact .container .content .map .map-wrapper {
-  width: 414px;
+  width: 100%;
   height: 361px;
   background-image: url("../img/pictures/maps.png");
   background-size: contain;
@@ -9878,6 +9900,15 @@ h4, .h4 {
   height: 100%;
   border: 1px #E3000B solid;
   background-color: rgba(255, 255, 255, 0.6117647059);
+}
+.content-contact .container .content .map .map-wrapper .alert p {
+  margin-bottom: 10px;
+}
+@media (max-width: 991.98px) {
+  .content-contact .container .content .map .map-wrapper .alert p {
+    font-size: 15px;
+    letter-spacing: 0.45px;
+  }
 }
 .content-contact .container .content .map .map-wrapper .alert span {
   text-decoration: underline;
@@ -9895,12 +9926,24 @@ h4, .h4 {
 }
 .content-contact .container .content .map footer .btn-maps {
   display: none;
+  position: absolute;
+  padding: 13px 0px;
 }
 .content-contact .container .content .map footer .alert {
   position: absolute;
   width: 321px;
   padding: 13px 0px;
   display: block;
+}
+@media (max-width: 991.98px) {
+  .content-contact .container .content .ouverture {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content-contact .container .content .ouverture .jour {
+    font-weight: 700;
+  }
 }
 
 .content-1-1 {

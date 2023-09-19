@@ -1,12 +1,23 @@
 .content-contact {
     margin-bottom: 60px;
+    
     .container {
         padding: 0;
+        @include media-breakpoint-down(md) {
+            padding: 0px 23px;
+            
+            }
         h2 {
             font-size: 34px;
             letter-spacing: 3.4px;
             font-weight: 600;
             margin-bottom: 35px;
+
+            @include media-breakpoint-down(md) {
+                font-size: 27px;
+                letter-spacing: 2.7px;
+                word-break: break-all;
+                }
             
             }
 
@@ -25,13 +36,24 @@
             }
 
             .map {
+
+                @include media-breakpoint-down(md) {
+                    padding: 0;
+                    }
+
+                h3 {
+                    @include media-breakpoint-down(md) {
+                        padding: 0 12px;
+                        }
+                }
                 
                 .map-wrapper {
-                    width: 414px;
+                    width: 100%;
                     height: 361px;
                     background-image: url("../img/pictures/maps.png");
                     background-size: contain;
-                    position: relative;
+                    position: relative; 
+                                      
                     
                     .alert {
                         position: absolute;
@@ -40,10 +62,21 @@
                         border: 1px $brand-red solid;
                         background-color: #ffffff9c;
 
+                        p {
+                            margin-bottom: 10px;
+
+                            @include media-breakpoint-down(lg) {
+                                font-size: 15px;
+                                letter-spacing: 0.45px;
+                                }
+                        }
+                        
                         span {
                             text-decoration: underline;
                         }
                     }
+
+                    
 
                     .pointer {
                         position: absolute;
@@ -53,6 +86,7 @@
                     
                 }
 
+
                 footer {
                     display: flex;
                     justify-content: center;
@@ -61,6 +95,10 @@
 
                     .btn-maps {
                         display: none;
+                        position: absolute;
+                        
+                        padding: 13px 0px;
+                        
                     }
 
                     .alert {
@@ -68,9 +106,23 @@
                         width: 321px;
                         padding: 13px 0px;
                         display: block;
+                        
                     }
 
                 }
+            }
+
+            .ouverture {
+                @include media-breakpoint-down(lg) {
+                    padding-top: 100px ;
+                    }
+
+                 .jour {
+
+                    @include media-breakpoint-down(md) {
+                        font-weight: 700;
+                    }
+                 }
             }
         }
     } 
