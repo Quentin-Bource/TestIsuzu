@@ -3,7 +3,7 @@
     margin-bottom: 100px;
 
     @include media-breakpoint-down(md) {
-        margin-top: 70px;
+        margin-top: 40px;
         margin-bottom: 50px;
     }
     .container {      
@@ -25,6 +25,7 @@
                 @include media-breakpoint-down(md) {
                     height: 460px;
                     right: 0;
+                    overflow: hidden;
                  }
 
                 &::after {
@@ -38,10 +39,17 @@
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: top;
+                    
 
                     @include media-breakpoint-down(md) {    
-
-                        display: none;
+                        width: 75px;
+                        height: 900px;
+                        transform: rotate(90deg);
+                        background-position: bottom;
+                        left: 35%;
+                        right: initial;
+                        top: initial;
+                        bottom: -420px;
 
                     }
                 } 
@@ -80,22 +88,11 @@
                 justify-content: center;              
                 align-items: center;
                 position: relative;
-                padding: 0;
+                padding: 0;               
+                height: 783px;
 
-                &::after {
-                    content: "";
-                    height: 100%;
-                    width: 150px;
-                    position: absolute;
-                    right: -1px;
-                    top: -1px;
-                    
-                    background-image: url("../img/pictures/bloc-sep-1.svg");
-                    background-color: red;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: top;
-                    
+                @include media-breakpoint-down(md) {
+                    height: initial;
                 }
                 
                 .previous {
@@ -172,6 +169,7 @@
                             display: flex;
                             justify-content: center;
                         }
+                        
                     }
 
                     

@@ -81,3 +81,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+//Navigation product Mobile
+
+document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('.navProduct .image-wrapper');
+    var articles = document.querySelectorAll('.allProduct article');
+
+    navLinks.forEach(function(navLink, index) {
+        navLink.addEventListener('click', function() {
+            
+            articles.forEach(function(article) {
+                article.classList.remove('active');
+            });
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            articles[index].classList.add('active');
+            navLink.classList.add('active');
+        });
+    });
+});
+
