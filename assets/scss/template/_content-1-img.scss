@@ -9,9 +9,11 @@
             height: 783px;
 
             @include media-breakpoint-down(md) {
-                height: 850px;
+                height: 780px;
             }
-            
+            @include media-breakpoint-down(sm) {
+                height: 840px;
+            }
 
             .content {
                 display: flex;

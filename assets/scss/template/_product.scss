@@ -98,8 +98,7 @@
                     @include media-breakpoint-down(lg) {
                         width: 750px;
                      }
-                    
-    
+   
                     p {
                         letter-spacing: 0.54px;
                         font-size: 18px;
@@ -181,8 +180,13 @@
                                 letter-spacing: 1.12px;
                                 font-size: 16px;
                                 font-weight: 600;
+
+                                @include media-breakpoint-down(md) {
+                                    padding-right: 23px;
+                                }
                             }
                             footer {
+                                margin-right: 23px;
                                 display: flex;
                                 justify-content: center;
                             }

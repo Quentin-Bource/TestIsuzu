@@ -10093,7 +10093,12 @@ h4, .h4 {
 }
 @media (max-width: 767.98px) {
   .content-1-img .container .row {
-    height: 850px;
+    height: 780px;
+  }
+}
+@media (max-width: 575.98px) {
+  .content-1-img .container .row {
+    height: 840px;
   }
 }
 .content-1-img .container .row .content {
@@ -10390,11 +10395,26 @@ h4, .h4 {
   font-weight: 600;
   margin-bottom: 30px;
 }
+@media (max-width: 767.98px) {
+  .evaluation .container h2, .evaluation .container .h2 {
+    padding: 0px 23px;
+    font-size: 27px;
+    letter-spacing: 2.7px;
+  }
+}
 .evaluation .container .row .star {
   padding: 0;
   display: flex;
-  justify-content: left;
+  justify-content: start;
   align-items: center;
+}
+@media (max-width: 767.98px) {
+  .evaluation .container .row .star {
+    padding: 0px 35px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
 }
 .evaluation .container .row .star span {
   font-size: 100px;
@@ -10408,9 +10428,20 @@ h4, .h4 {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 767.98px) {
+  .evaluation .container .row .star .note {
+    align-items: start;
+    justify-content: start;
+  }
+}
 .evaluation .container .row .star .note .star-note {
   margin-top: 15px;
   margin-bottom: 18px;
+}
+@media (max-width: 767.98px) {
+  .evaluation .container .row .star .note .star-note img {
+    margin-right: 10px;
+  }
 }
 .evaluation .container .row .star .note p {
   margin: 0;
@@ -10422,12 +10453,24 @@ h4, .h4 {
   display: flex;
   align-items: center;
   padding: 0;
+  width: 100%;
+  margin-top: 35px;
+}
+@media (max-width: 767.98px) {
+  .evaluation .container .row .comment .previous img {
+    width: 15px;
+  }
 }
 .evaluation .container .row .comment .content {
   text-align: center;
   border-radius: 20px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3803921569);
   margin: 0px 41px;
+}
+@media (max-width: 767.98px) {
+  .evaluation .container .row .comment .content {
+    margin: 0px 30px;
+  }
 }
 .evaluation .container .row .comment .content h3, .evaluation .container .row .comment .content .h3 {
   color: #6D727B;
@@ -10439,11 +10482,23 @@ h4, .h4 {
 .evaluation .container .row .comment .content p {
   padding: 0px 65px;
 }
+@media (max-width: 767.98px) {
+  .evaluation .container .row .comment .content p {
+    font-size: 16px;
+    letter-spacing: 1.12px;
+    padding: 0px 15px;
+  }
+}
 .evaluation .container .row .comment .content footer {
   margin-bottom: 30px;
 }
 .evaluation .container .row .comment .content footer img {
   height: 26px;
+}
+@media (max-width: 767.98px) {
+  .evaluation .container .row .comment .next img {
+    width: 15px;
+  }
 }
 
 .footer {
@@ -11037,7 +11092,13 @@ h4, .h4 {
   font-size: 16px;
   font-weight: 600;
 }
+@media (max-width: 767.98px) {
+  .product .container .content .mobileProduct .allProduct article .text-wrapper p {
+    padding-right: 23px;
+  }
+}
 .product .container .content .mobileProduct .allProduct article .text-wrapper footer {
+  margin-right: 23px;
   display: flex;
   justify-content: center;
 }

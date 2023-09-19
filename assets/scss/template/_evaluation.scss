@@ -1,12 +1,20 @@
 .evaluation {
     margin-bottom: 100px;
     .container {
+
         padding: 0;
+
         h2 {
             font-size: 34px;
             letter-spacing: 3.4px;
             font-weight: 600;
             margin-bottom: 30px;
+
+            @include media-breakpoint-down(md) { 
+                padding: 0px 23px; 
+                font-size: 27px;
+                letter-spacing: 2.7px;
+            }
         }
     
         .row {
@@ -14,13 +22,22 @@
             .star {
                 padding: 0;
                 display: flex;
-                justify-content: left;
+                justify-content: start;
                 align-items: center;
+
+                @include media-breakpoint-down(md) { 
+                    padding: 0px 35px;   
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                }
+                
                 span {
                   font-size: 100px;
                   font-family: $font-face-title;
                   color: $brand-red;              
-                margin-right: 36px;
+                  margin-right: 36px;
+                  
                 }
     
                 .note {
@@ -28,10 +45,24 @@
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
+
+                    @include media-breakpoint-down(md) {    
+                        
+                        align-items: start;
+                        justify-content: start;
+                    }
     
                     .star-note {
                         margin-top: 15px;
                         margin-bottom: 18px;
+
+                        img {
+                            @include media-breakpoint-down(md) {    
+                        
+                                margin-right: 10px;
+                            }
+                        }
+   
                     }
     
                     p {
@@ -50,11 +81,27 @@
                 display: flex;
                 align-items: center;
                 padding: 0;
+                width: 100%;
+                margin-top: 35px;
+
+                .previous {
+                    img {
+                        @include media-breakpoint-down(md) {    
+                        
+                            width: 15px;
+                        }
+                    }
+                }
                 .content {
                     text-align: center;
                     border-radius: 20px;
                     box-shadow: 0px 0px 30px #00000061;
                     margin:0px 41px ;
+
+                    @include media-breakpoint-down(md) {    
+                        
+                        margin: 0px 30px;
+                    }
     
                     h3 {
                         color: $brand-grey-light;
@@ -62,15 +109,34 @@
                         font-weight: 300;
                         letter-spacing: 3px;
                         padding: 25px 0px;
+
+
                     }
                     p {
                         padding: 0px 65px;
+
+                        @include media-breakpoint-down(md) {    
+                            font-size: 16px;
+                            letter-spacing: 1.12px;
+                            padding: 0px 15px;
+                        }
                     }
+
+                    
     
                     footer {
                         margin-bottom: 30px;
                         img {
                             height: 26px;
+                        }
+                    }
+                }
+
+                .next {
+                    img {
+                        @include media-breakpoint-down(md) {    
+                        
+                            width: 15px;
                         }
                     }
                 }
