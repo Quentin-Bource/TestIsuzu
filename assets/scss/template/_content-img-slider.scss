@@ -7,7 +7,7 @@
         margin-bottom: 50px;
     }
     .container {      
-        padding: 0;
+        
 
         @include media-breakpoint-down(md) {
             padding: 0px 12px;
@@ -107,7 +107,7 @@
                 .content {
                     padding-left: 60px;
                     @include media-breakpoint-down(md) {
-                        margin-top: 400px;
+                        margin-top: 350px;
                         padding: 0px 23px;
                     }
 

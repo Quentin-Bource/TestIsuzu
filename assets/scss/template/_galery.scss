@@ -6,15 +6,30 @@
         margin-bottom: 40px;
         font-weight: 600;
         text-transform: uppercase;
+
+        @include media-breakpoint-down(md) {
+            font-size: 27px;
+            letter-spacing: 2.7px;
+        }
     }
     .container-fluid {
-        
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include media-breakpoint-down(md) {
+            padding: 0;
+        }
         
         .previous {
             opacity: 50%;
+
+            
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+    
+            
         }
 
 
@@ -24,10 +39,48 @@
         .photo {
             padding: 10px 25px;
             height: 270px;
+            @include media-breakpoint-down(md) {
+                padding: 0;
+            }
 
+            #photo- {
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                    padding: 0;
+                }
+    
+            }
+
+            #photo-2 {
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+    
+            }
+
+            #photo-3 {
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+    
+            }
+
+            #photo-4 {
+                @include media-breakpoint-down(xl) {
+                    display: none;
+                }
+    
+            }
+            
             img {
                 height: 100%;
                 object-fit: cover;
+            }
+        }
+
+        .next {
+            @include media-breakpoint-down(md) {
+                display: none;
             }
         }
     }
@@ -35,6 +88,11 @@
     .nav {
         display: flex;
         justify-content: center;
+
+        
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
 
         
 

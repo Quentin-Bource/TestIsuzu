@@ -2,8 +2,6 @@
     margin-bottom: 100px;
     .container {
 
-        padding: 0;
-
         h2 {
             font-size: 34px;
             letter-spacing: 3.4px;
@@ -11,7 +9,7 @@
             margin-bottom: 30px;
 
             @include media-breakpoint-down(md) { 
-                padding: 0px 23px; 
+                
                 font-size: 27px;
                 letter-spacing: 2.7px;
             }
@@ -25,12 +23,12 @@
                 justify-content: start;
                 align-items: center;
 
-                // @include media-breakpoint-down(md) { 
-                //     padding: 0px 35px;   
-                //     flex-direction: column;
-                //     align-items: start;
-                //     justify-content: start;
-                // }
+                @include media-breakpoint-down(md) { 
+                    padding: 0px 12px;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                }
                 
                 span {
                   font-size: 100px;
@@ -47,7 +45,6 @@
                     flex-direction: column;
 
                     @include media-breakpoint-down(md) {    
-                        
                         align-items: start;
                         justify-content: start;
                     }
@@ -71,6 +68,7 @@
                         font-size: 20px;
                         letter-spacing: 0px;
                         font-family: $font-face-title;
+                        font-weight: 500;
                     }
                 }
     
@@ -81,17 +79,29 @@
                 display: flex;
                 align-items: center;
                 padding: 0;
-                width: 100%;
                 margin-top: 35px;
-
                 
+                @include media-breakpoint-down(md) {    
+                    padding: 0px 15px;
+                }
+                
+                .previous {
+                    img {
+                        @include media-breakpoint-down(md) {    
+                            margin-right: 10px;
+                            width: 15px;
+                        }
+                    }
+                }
                 .content {
                     text-align: center;
                     border-radius: 20px;
                     box-shadow: 0px 0px 30px #00000061;
                     margin:0px 41px ;
 
-
+                    @include media-breakpoint-down(md) {    
+                        margin: 0px;
+                    }
     
                     h3 {
                         color: $brand-grey-light;
@@ -122,7 +132,14 @@
                     }
                 }
 
-
+                .next {
+                    img {
+                        @include media-breakpoint-down(md) {    
+                            margin-left: 10px;
+                            width: 15px;
+                        }
+                    }
+                }
             }
         }
 
